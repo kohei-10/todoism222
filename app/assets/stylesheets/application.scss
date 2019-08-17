@@ -1,1 +1,62 @@
 @import "bootstrap";
+
+@charset "UTF-8";
+
+*{
+  margin:0;
+  padding:0;
+}
+
+
+.container{
+  width:100%;
+
+
+
+}
+
+.mb-2{
+
+
+  /* background-image: url('background.png');
+  background-size:cover; */
+  color:#4B4B4B;
+  background-color: #47c4b5;
+  text-align:center;
+  height:350px;
+
+}
+
+
+
+.icon_img{
+  width:255px;
+  height:250px;
+  background-image: url('todo-icon.png');
+  background-size: cover;
+  float:right;
+  margin-right:200px;
+  margin-top:50px;
+
+
+
+
+
+}
+
+h1.top-title{
+  font-size:64px;
+  margin-bottom:50px;
+  float:left;
+  margin-top:100px;
+  margin-left:200px;
+
+
+
+
+
+}
+
+.clear{
+  clear:both;
+}
