@@ -81,5 +81,6 @@ test:
 production:
   <<: *default
   database: todoism_production
+  adapter: postgresql
   username: todoism
   password: <%= ENV['TODOISM_DATABASE_PASSWORD'] %>
