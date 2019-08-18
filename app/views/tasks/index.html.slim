@@ -3,17 +3,36 @@
 .mb-2
    h1.top-title To&nbsp;&nbsp;Do&nbsp;&nbsp;ism
 
+
    .icon_img
 
    .clear
 
 
 
-h1 タスク一覧
 
-= link_to '新規登録' , new_task_path, class: 'btn btn-primary'
+//検索機能view
+= search_form_for @q, class: 'mb-5' do |f|
+  .form-group.row
+    = f.label :name_cont, '名称', class: 'col-sm-2 col-form-label'
+    .col-sm-10
+      =f.search_field :name_cont, class: 'form-control'
+  .form-group.row
+    = f.label :created_at_gteq, '登録日時', class: 'col-sm-2 col-form-label'
+    .col-sm-10
+      =f.search_field :created_at_gteq, class: 'form-control'
+  .form-group
+    = f.submit class: 'btn btn-outline-primary'
 
+.mb-button
+  = link_to 'タスクを追加' , new_task_path, class: 'btn btn-primary mr-1'
+
+//ページネーション機能view
 .mb-3
+  = paginate @tasks
+  = page_entries_info @tasks
+
+//タスク一覧表view
 table.table.table-hover
  thread.thread-default
   tr
@@ -28,3 +47,5 @@ table.table.table-hover
       td
        = link_to '編集', edit_task_path(task), class: 'btn btn-primary mr-3'
        = link_to '削除', task,method: :delete, data: {confirm: "タスク「#{task.name}」を削除します。よろしいですか？"},class: 'btn btn-danger'
+
+  

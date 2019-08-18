@@ -9,8 +9,11 @@ html
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   body
     .app-title.navber-expand-md.navbar-light.bg-light
-      .navbar-brand Taskleaf
+      .navbar-brand To Do で変わる今日。
     .container
       - if flash.notice.present?
         .alert.alert-success= flash.notice
       = yield
+  footer
+   .footer-right &copy; 2019 To Do ism.
+   .clear
