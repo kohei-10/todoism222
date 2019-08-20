@@ -26,8 +26,7 @@ To do ism (タスク管理アプリ ：画像添付可)
 - Node.js v12.2.0
 - postgres (PostgreSQL) 11.4
 
-- gem追加 （Gemfile内）
--- (slim-rails,html2slim,bootstrap,ransack,kaminari)
+- gem追加 （Gemfile内: slim-rails,html2slim,bootstrap,ransack,kaminari)
 
 - Active Storage （画像ファイルアップロード用）
 
@@ -43,25 +42,30 @@ To do ism (タスク管理アプリ ：画像添付可)
 
 ```bash
 $ macOSにて,Homebrewをインストール。
-$ Homebrew経由でrbenvをインストール。
-$ rbenvを使ってRubyをインストール。
-$ gemをインストール。
-$ gemコマンドでBundler,railsをインストール。
-$ HomebrewでNode.js,postgresqlをインストール。
+$ brew install rbenv    （Homebrew経由でrbenvをインストール。）
+$ rbenv install 2.5.1   （Rubyをインストール。）
+$ rbenv global 2.5.1
+$ gem update --system
+$ gem install bundler
+$ gem install rails -v 5.2.1
+$ brew install node   (Node.jsをインストール。)
+$ brew install postgresql   (postgresqlをインストール。）
 
-$ postgresqlを起動
-$ "rails new todoism -d postgresql" でアプリケーション作成
-$ "db:create" でデータベース作成
-$ "bin/rails s" でサーバー起動
+$ brew services start postgresql   (postgresqlを起動)
+$ rails new todoism -d postgresql (アプリケーション雛形作成)
+$ db:create  (データベース作成)
+$ bin/rails s (サーバー起動)
 
-$ Gemfileに各gemを追記し、bundleを実行
+- Gemfileに各gemを追記 -
 
-$ "bin/rails g model Task name:string description:text" でモデル作成
-$ "bin/rails db:migrate" でtasksテーブルを作成
-$ "bin/rails g controller tasks index show new edit" でコントローラー作成
-$ "bin/rails g migration ChangeTasksNameNotNull" で別途マイグレーションファイルを作成 （NOT NULL制約の追加）
-$ "bin/rails active_storage:install" でActive Storageの準備 →"bin/rails db:migrate"でデータベースに反映
-$ "bin/rails g kaminari:views bootstrap4" でページネーションのデザイン調整
+$ bundle (gem適用)
+$ bin/rails g model Task name:string description:text  (モデル作成)
+$ bin/rails db:migrate  (tasksテーブル作成)
+$ bin/rails g controller tasks index show new edit  (コントローラー作成)
+$ bin/rails g migration ChangeTasksNameNotNull  (NOT NULL制約のマイグレーションファイルを作成)
+$ bin/rails active_storage:install  (Active Storageの準備) 
+$ bin/rails db:migrate (データベース反映)
+$ bin/rails g kaminari:views bootstrap4  (ページネーションのデザイン調整)
 ```
 
 ## 全体の設計・手順
