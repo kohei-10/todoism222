@@ -42,14 +42,14 @@ To do ism (タスク管理アプリ ：画像添付可)
 
 ```bash
 $ macOSにて,Homebrewをインストール。
-$ brew install rbenv    （Homebrew経由でrbenvをインストール。）
-$ rbenv install 2.5.1   （Rubyをインストール。）
+$ brew install rbenv   
+$ rbenv install 2.5.1  
 $ rbenv global 2.5.1
 $ gem update --system
 $ gem install bundler
 $ gem install rails -v 5.2.1
-$ brew install node   (Node.jsをインストール。)
-$ brew install postgresql   (postgresqlをインストール。）
+$ brew install node   
+$ brew install postgresql  
 
 $ brew services start postgresql   (postgresqlを起動)
 $ rails new todoism -d postgresql (アプリケーション雛形作成)
@@ -74,7 +74,7 @@ $ bin/rails g kaminari:views bootstrap4  (ページネーションのデザイ�
 2. 検索機能追加
 3. ページネーション機能追加
 4. エラーメッセージを日本語に翻訳
-5. Active storageで写真添付機能追加 （herokuによるアプリ公開の際にAWSのS3を利用）
+5. Active storageで写真添付機能追加 （herokuによるアプリ公開の際にはAWSのS3を利用）
 6. bootstrapとcssでデザインを調整
 
  
