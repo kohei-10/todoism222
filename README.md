@@ -67,11 +67,11 @@ $ "bin/rails g kaminari:views bootstrap4" でページネーションのデザ�
 ## 全体の設計・手順
 
 1. Rails でCRUD機能備えた雛形アプリ作成
-2.検索機能追加
+2. 検索機能追加
 3. ページネーション機能追加
-4.エラーメッセージを日本語に翻訳
-5.Active storageで写真添付機能追加 （herokuによるアプリ公開の際にAWSのS3を利用）
-6.bootstrapとcssでデザインを調整
+4. エラーメッセージを日本語に翻訳
+5. Active storageで写真添付機能追加 （herokuによるアプリ公開の際にAWSのS3を利用）
+6. bootstrapとcssでデザインを調整
 
  
 
