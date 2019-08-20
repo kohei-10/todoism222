@@ -27,11 +27,7 @@ To do ism (タスク管理アプリ ：画像添付可)
 - postgres (PostgreSQL) 11.4
 
 - gem追加 （Gemfile内）
--- slim-rails
--- html2slim
--- bootstrap
--- ransack
--- kaminari
+-- (slim-rails,html2slim,bootstrap,ransack,kaminari)
 
 - Active Storage （画像ファイルアップロード用）
 
@@ -70,10 +66,14 @@ $ "bin/rails g kaminari:views bootstrap4" でページネーションのデザ�
 
 ## 全体の設計・手順
 
-1. 
-2. 
-3. 
+1. Rails でCRUD機能備えた雛形アプリ作成
+2.検索機能追加
+3. ページネーション機能追加
+4.エラーメッセージを日本語に翻訳
+5.Active storageで写真添付機能追加 （herokuによるアプリ公開の際にAWSのS3を利用）
+6.bootstrapとcssでデザインを調整
 
+ 
 
 ## 作者
 https://github.com/kohei-10
