@@ -2,6 +2,7 @@
 
 @charset "UTF-8";
 
+
 *{
   margin:0;
   padding:0;
@@ -10,58 +11,48 @@
 
 .container{
   width:100%;
+  margin-left: auto;
+  margin-right: auto;
 
+}
 
+.top-visual{
+  width:100%;
+  color:#4B4B4B;
+  background-color: #59d9c9;
+  padding:60px 20px 60px 20px ;
+  height:350px;
+  margin-bottom:30px;
+  text-align: center;
 
 }
 
 .icon_img{
-  width:255px;
-  height:250px;
+  width:22%;
+  height:100%;
   background-image: url('todo-icon.png');
   background-size: cover;
   float:right;
   margin-right:200px;
-  margin-top:50px;
-
-
-
-
-
+  display: inline;
 }
 
-h1.top-title{
-  font-size:64px;
-  margin-bottom:50px;
-  float:left;
-  margin-top:100px;
-  margin-left:200px;
 
+h1.top-title{
+  font-size:65px;
+  display: inline-block;
+  margin-top: 80px;
+  margin-left: 70px;
+}
+
+.clear{
+  clear:both;
 }
 
 .navbar-brand{
   font-size:18px;
   font-weight:lighter;
 }
-
-.mb-2{
-  /* background-image: url('background.png');
-  background-size:cover; */
-  color:#4B4B4B;
-  background-color: #59d9c9;
-  text-align:center;
-  height:350px;
-
-}
-
-
-.clear{
-  clear:both;
-}
-
-
-
-
 
 .btn-outline-primary{
   float:right;
@@ -70,11 +61,12 @@ h1.top-title{
   border-color: #4B4B4B;
 }
 
+
 .btn-outline-primary:hover{
   color:white;
   background-color: #4B4B4B;
-
 }
+
 
 .mr-3{
   color:#4B4B4B;
@@ -82,14 +74,8 @@ h1.top-title{
   border-color: #4B4B4B;
 }
 
-.mr-3:hover{
-  color:white;
-  background-color: #4B4B4B;
-  transition: background-color 0.5s;
-}
 
 .btn-danger{
-
   background-color: #ff4d45;
   border-color: #4B4B4B;
 }
@@ -107,11 +93,6 @@ h1.top-title{
   font-weight: bold;
 }
 
-.mr-1:hover{
-  color:white;
-  background-color: #4B4B4B;
-  transition: background-color 0.5s;
-}
 
 .mb-button{
   text-align:center;
@@ -141,7 +122,7 @@ h1.top-title{
   transition: background-color 0.5s;
 }
 
-.mr-1-2{
+.mr-0{
   display: inline-block;
   width: 200px;
   height:70px;
@@ -153,13 +134,6 @@ h1.top-title{
   font-weight: bold;
   float:right;
   margin: 30px 0 100px 0;
-
-}
-
-.mr-1-2:hover{
-  color:white;
-  background-color: #4B4B4B;
-  transition: background-color 0.5s;
 }
 
 .mr-4{
@@ -167,8 +141,27 @@ h1.top-title{
   background-color: white;
   border-color: #4B4B4B;
   margin-top:30px;
-
 }
+
+
+.mr-1:hover{
+  color:white;
+  background-color: #4B4B4B;
+  transition: background-color 0.5s;
+}
+
+.mr-3:hover{
+  color:white;
+  background-color: #4B4B4B;
+  transition: background-color 0.5s;
+}
+
+.mr-0:hover{
+  color:white;
+  background-color: #4B4B4B;
+  transition: background-color 0.5s;
+}
+
 
 .mr-4:hover{
   color:white;

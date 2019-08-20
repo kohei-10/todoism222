@@ -4,9 +4,7 @@ h1 タスクの詳細
  = link_to '一覧', tasks_path, class:'nav-link'
  table.table.table-hover
   tbody
-    / tr
-    /   th= Task.human_attribute_name(:id)
-    /   id= @task.id
+    
     tr
       th= Task.human_attribute_name(:name)
       td= @task.name
@@ -26,4 +24,4 @@ h1 タスクの詳細
 
 = link_to '編集', edit_task_path, class: 'btn btn-primary mr-3'
 = link_to '削除', @task,method: :delete, data: {confirm: "タスク「#{@task.name}」を削除します。よろしいですか？"},class: 'btn btn-danger'
-= link_to '他のタスクを追加' , new_task_path, class: 'btn btn-primary mr-1-2'
+= link_to '他のタスクを追加' , new_task_path, class: 'btn btn-primary mr-0'

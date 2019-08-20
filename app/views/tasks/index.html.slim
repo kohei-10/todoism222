@@ -1,12 +1,12 @@
 
 
-.mb-2
-   h1.top-title To&nbsp;&nbsp;Do&nbsp;&nbsp;ism
-
+.top-visual
+   h1.top-title To&nbsp;&nbsp;Do&nbsp;&nbsp;ism .
 
    .icon_img
-
    .clear
+
+
 
 
 
@@ -24,6 +24,7 @@
   .form-group
     = f.submit class: 'btn btn-outline-primary'
 
+//タスク追加ボタン
 .mb-button
   = link_to 'タスクを追加' , new_task_path, class: 'btn btn-primary mr-1'
 
@@ -47,5 +48,3 @@ table.table.table-hover
       td
        = link_to '編集', edit_task_path(task), class: 'btn btn-primary mr-3'
        = link_to '削除', task,method: :delete, data: {confirm: "タスク「#{task.name}」を削除します。よろしいですか？"},class: 'btn btn-danger'
-
-  
