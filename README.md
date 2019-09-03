@@ -59,13 +59,13 @@ $ bin/rails s (サーバー起動)
 - Gemfileに各gemを追記 -
 
 $ bundle (gem適用)
-$ bin/rails g model Task name:string description:text  (モデル作成)
-$ bin/rails db:migrate  (tasksテーブル作成)
-$ bin/rails g controller tasks index show new edit  (コントローラー作成)
-$ bin/rails g migration ChangeTasksNameNotNull  (NOT NULL制約のマイグレーションファイルを作成)
-$ bin/rails active_storage:install  (Active Storageの準備) 
-$ bin/rails db:migrate (データベース反映)
-$ bin/rails g kaminari:views bootstrap4  (ページネーションのデザイン調整)
+$ rails g model Task name:string description:text  (モデル作成)
+$ rails db:migrate  (tasksテーブル作成)
+$ rails g controller tasks index show new edit  (コントローラー作成)
+$ rails g migration ChangeTasksNameNotNull  (NOT NULL制約のマイグレーションファイルを作成)
+$ rails active_storage:install  (Active Storageの準備) 
+$ rails db:migrate (データベース反映)
+$ rails g kaminari:views bootstrap4  (ページネーションのデザイン調整)
 ```
 
 ## 全体の設計・手順
